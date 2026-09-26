@@ -1,0 +1,31 @@
+name: Daily ReloLead Ingestion Pipeline
+
+on:
+  schedule:
+    # Runs Mon-Sat at 14:00 UTC (6:00 AM PST)
+    - cron: '0 14 * * 1-6'
+  workflow_dispatch: # Allows manual trigger anytime
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install pandas requests beautifulsoup4
+
+      - name: Run Lead Scraper & Storage Sync
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          HUB_CRM_API_KEY: ${{ secrets.HUB_CRM_API_KEY }}
+        run: |
+          python scraper.py
