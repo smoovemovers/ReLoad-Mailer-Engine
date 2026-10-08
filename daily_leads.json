@@ -1,0 +1,56 @@
+{
+  "last_updated": "2026-10-08T12:00:00",
+  "lead_count": 5,
+  "leads": [
+    {
+      "address": "18660 SW Sugarloaf Ln",
+      "city": "Beaverton",
+      "zip": "97007",
+      "type": "Single Family Home",
+      "price": 639999,
+      "status": "Pending",
+      "distance_miles": 4.21,
+      "full_address": "18660 SW Sugarloaf Ln, Beaverton, OR 97007"
+    },
+    {
+      "address": "12358 SW Champlin Ln",
+      "city": "Beaverton",
+      "zip": "97003",
+      "type": "Single Family Home",
+      "price": 678900,
+      "status": "Under Contract",
+      "distance_miles": 2.15,
+      "full_address": "12358 SW Champlin Ln, Beaverton, OR 97003"
+    },
+    {
+      "address": "8523 SE Stonecrop Ln",
+      "city": "Hillsboro",
+      "zip": "97129",
+      "type": "Single Family Home",
+      "price": 645000,
+      "status": "Pending",
+      "distance_miles": 7.42,
+      "full_address": "8523 SE Stonecrop Ln, Hillsboro, OR 97129"
+    },
+    {
+      "address": "1830 A Ave",
+      "city": "Lake Oswego",
+      "zip": "97034",
+      "type": "Single Family Home",
+      "price": 1150000,
+      "status": "Under Contract",
+      "distance_miles": 8.91,
+      "full_address": "1830 A Ave, Lake Oswego, OR 97034"
+    },
+    {
+      "address": "2885 SW 89th Ave",
+      "city": "Portland",
+      "zip": "97225",
+      "type": "Single Family Home",
+      "price": 710000,
+      "status": "Pending",
+      "distance_miles": 2.11,
+      "full_address": "2885 SW 89th Ave, Portland, OR 97225"
+    }
+  ]
+}
